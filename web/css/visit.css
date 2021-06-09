@@ -1,0 +1,20 @@
+body{
+    height: 100vh;
+}
+.wrapper{
+    height: 100%;
+    /*background: #d6cbcb;*/
+}
+.banner{
+    min-height: 40%;
+    background: #d6cbcb;
+}/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 9, 2021, 4:26:58 PM
+    Author     : zepedro
+*/
+
