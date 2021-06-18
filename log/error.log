@@ -1,0 +1,246 @@
+2021/06/18 11:22:40 [error] 971#971: *260 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+ReflectionException: Class yii\bootstrap4\BootstrapAsset does not exist in /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/di/Container.php:508
+Stack trace:
+#0 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/di/Container.php(508): ReflectionClass->__construct()
+#1 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/di/Container.php(386): yii\di\Container->getDependencies()
+#2 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/di/Container.php(171): yii\di\Container->build()
+#3 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/BaseYii.php(365): yii\di\Container->get()
+#4 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/web/AssetManager.php(286): yii\BaseYii::createObject()
+#5 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/web/AssetManager.php(259): yii\web\AssetManager->loadBundle()
+#6 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/web/View.php(287): yii\web\AssetManager->getBundle()
+#7 /home/zepedro/domain" while reading upstream, client: 127.0.0.1, server: atra, request: "GET /site/bootstrap/css/bootstrap.css HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.4-fpm.sock:", host: "atra", referrer: "http://atra/site/about"
+2021/06/18 11:23:35 [error] 971#971: *260 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+ReflectionException: Class yii\bootstrap4\BootstrapAsset does not exist in /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/di/Container.php:508
+Stack trace:
+#0 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/di/Container.php(508): ReflectionClass->__construct()
+#1 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/di/Container.php(386): yii\di\Container->getDependencies()
+#2 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/di/Container.php(171): yii\di\Container->build()
+#3 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/BaseYii.php(365): yii\di\Container->get()
+#4 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/web/AssetManager.php(286): yii\BaseYii::createObject()
+#5 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/web/AssetManager.php(259): yii\web\AssetManager->loadBundle()
+#6 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/web/View.php(287): yii\web\AssetManager->getBundle()
+#7 /home/zepedro/domain" while reading upstream, client: 127.0.0.1, server: atra, request: "GET /site/bootstrap/css/bootstrap.css HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.4-fpm.sock:", host: "atra", referrer: "http://atra/site/about"
+2021/06/18 11:23:36 [error] 971#971: *260 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+ReflectionException: Class yii\bootstrap4\BootstrapAsset does not exist in /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/di/Container.php:508
+Stack trace:
+#0 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/di/Container.php(508): ReflectionClass->__construct()
+#1 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/di/Container.php(386): yii\di\Container->getDependencies()
+#2 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/di/Container.php(171): yii\di\Container->build()
+#3 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/BaseYii.php(365): yii\di\Container->get()
+#4 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/web/AssetManager.php(286): yii\BaseYii::createObject()
+#5 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/web/AssetManager.php(259): yii\web\AssetManager->loadBundle()
+#6 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/web/View.php(287): yii\web\AssetManager->getBundle()
+#7 /home/zepedro/domain" while reading upstream, client: 127.0.0.1, server: atra, request: "GET /site/bootstrap/css/bootstrap.css HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.4-fpm.sock:", host: "atra", referrer: "http://atra/site/about"
+2021/06/18 11:23:36 [error] 971#971: *260 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+ReflectionException: Class yii\bootstrap4\BootstrapAsset does not exist in /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/di/Container.php:508
+Stack trace:
+#0 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/di/Container.php(508): ReflectionClass->__construct()
+#1 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/di/Container.php(386): yii\di\Container->getDependencies()
+#2 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/di/Container.php(171): yii\di\Container->build()
+#3 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/BaseYii.php(365): yii\di\Container->get()
+#4 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/web/AssetManager.php(286): yii\BaseYii::createObject()
+#5 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/web/AssetManager.php(259): yii\web\AssetManager->loadBundle()
+#6 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/web/View.php(287): yii\web\AssetManager->getBundle()
+#7 /home/zepedro/domain" while reading upstream, client: 127.0.0.1, server: atra, request: "GET /site/bootstrap/css/bootstrap.css HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.4-fpm.sock:", host: "atra", referrer: "http://atra/site/about"
+2021/06/18 11:23:37 [error] 971#971: *260 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+ReflectionException: Class yii\bootstrap4\BootstrapAsset does not exist in /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/di/Container.php:508
+Stack trace:
+#0 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/di/Container.php(508): ReflectionClass->__construct()
+#1 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/di/Container.php(386): yii\di\Container->getDependencies()
+#2 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/di/Container.php(171): yii\di\Container->build()
+#3 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/BaseYii.php(365): yii\di\Container->get()
+#4 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/web/AssetManager.php(286): yii\BaseYii::createObject()
+#5 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/web/AssetManager.php(259): yii\web\AssetManager->loadBundle()
+#6 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/web/View.php(287): yii\web\AssetManager->getBundle()
+#7 /home/zepedro/domain" while reading upstream, client: 127.0.0.1, server: atra, request: "GET /site/bootstrap/css/bootstrap.css HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.4-fpm.sock:", host: "atra", referrer: "http://atra/site/about"
+2021/06/18 11:25:52 [error] 971#971: *278 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+ReflectionException: Class yii\bootstrap4\BootstrapAsset does not exist in /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/di/Container.php:508
+Stack trace:
+#0 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/di/Container.php(508): ReflectionClass->__construct()
+#1 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/di/Container.php(386): yii\di\Container->getDependencies()
+#2 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/di/Container.php(171): yii\di\Container->build()
+#3 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/BaseYii.php(365): yii\di\Container->get()
+#4 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/web/AssetManager.php(286): yii\BaseYii::createObject()
+#5 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/web/AssetManager.php(259): yii\web\AssetManager->loadBundle()
+#6 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/web/View.php(287): yii\web\AssetManager->getBundle()
+#7 /home/zepedro/domain" while reading upstream, client: 127.0.0.1, server: atra, request: "GET /site/bootstrap/css/bootstrap.css HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.4-fpm.sock:", host: "atra", referrer: "http://atra/site/about"
+2021/06/18 11:26:00 [error] 971#971: *278 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+ReflectionException: Class yii\bootstrap4\BootstrapAsset does not exist in /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/di/Container.php:508
+Stack trace:
+#0 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/di/Container.php(508): ReflectionClass->__construct()
+#1 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/di/Container.php(386): yii\di\Container->getDependencies()
+#2 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/di/Container.php(171): yii\di\Container->build()
+#3 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/BaseYii.php(365): yii\di\Container->get()
+#4 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/web/AssetManager.php(286): yii\BaseYii::createObject()
+#5 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/web/AssetManager.php(259): yii\web\AssetManager->loadBundle()
+#6 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/web/View.php(287): yii\web\AssetManager->getBundle()
+#7 /home/zepedro/domain" while reading upstream, client: 127.0.0.1, server: atra, request: "GET /site/bootstrap/css/bootstrap.css HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.4-fpm.sock:", host: "atra", referrer: "http://atra/site/about"
+2021/06/18 11:38:28 [error] 971#971: *286 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+Error: Class 'yii\bootstrap\NavBar' not found in /home/zepedro/domains/atra/basic/views/layouts/main.php:31
+Stack trace:
+#0 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/View.php(348): require()
+#1 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#2 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/Controller.php(425): yii\base\View->renderFile()
+#3 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/Controller.php(411): yii\base\Controller->renderContent()
+#4 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/web/ErrorAction.php(139): yii\base\Controller->render()
+#5 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/web/ErrorAction.php(118): yii\web\ErrorAction->renderHtmlResponse()
+#6 [internal function]: yii\web\ErrorAction->run()
+#7 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array()
+#8 /home/zepedro/doma" while reading upstream, client: 127.0.0.1, server: atra, request: "GET /site/bootstrap/css/bootstrap.css HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.4-fpm.sock:", host: "atra", referrer: "http://atra/site/about"
+2021/06/18 11:40:46 [error] 971#971: *293 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+Error: Class 'yii\bootstrap\NavBar' not found in /home/zepedro/domains/atra/basic/views/layouts/main.php:31
+Stack trace:
+#0 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/View.php(348): require()
+#1 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#2 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/Controller.php(425): yii\base\View->renderFile()
+#3 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/Controller.php(411): yii\base\Controller->renderContent()
+#4 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/web/ErrorAction.php(139): yii\base\Controller->render()
+#5 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/web/ErrorAction.php(118): yii\web\ErrorAction->renderHtmlResponse()
+#6 [internal function]: yii\web\ErrorAction->run()
+#7 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array()
+#8 /home/zepedro/doma" while reading upstream, client: 127.0.0.1, server: atra, request: "GET /mybs/css/bootstrap.css HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.4-fpm.sock:", host: "atra", referrer: "http://atra/site/about"
+2021/06/18 11:40:47 [error] 971#971: *293 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+Error: Class 'yii\bootstrap\NavBar' not found in /home/zepedro/domains/atra/basic/views/layouts/main.php:31
+Stack trace:
+#0 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/View.php(348): require()
+#1 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#2 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/Controller.php(425): yii\base\View->renderFile()
+#3 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/Controller.php(411): yii\base\Controller->renderContent()
+#4 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/web/ErrorAction.php(139): yii\base\Controller->render()
+#5 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/web/ErrorAction.php(118): yii\web\ErrorAction->renderHtmlResponse()
+#6 [internal function]: yii\web\ErrorAction->run()
+#7 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array()
+#8 /home/zepedro/doma" while reading upstream, client: 127.0.0.1, server: atra, request: "GET /mybs/css/bootstrap.css HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.4-fpm.sock:", host: "atra", referrer: "http://atra/site/about"
+2021/06/18 11:41:45 [error] 971#971: *293 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+Error: Class 'yii\bootstrap\NavBar' not found in /home/zepedro/domains/atra/basic/views/layouts/main.php:31
+Stack trace:
+#0 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/View.php(348): require()
+#1 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#2 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/Controller.php(425): yii\base\View->renderFile()
+#3 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/Controller.php(411): yii\base\Controller->renderContent()
+#4 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/web/ErrorAction.php(139): yii\base\Controller->render()
+#5 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/web/ErrorAction.php(118): yii\web\ErrorAction->renderHtmlResponse()
+#6 [internal function]: yii\web\ErrorAction->run()
+#7 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array()
+#8 /home/zepedro/doma" while reading upstream, client: 127.0.0.1, server: atra, request: "GET /mybs/css/bootstrap.css HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.4-fpm.sock:", host: "atra", referrer: "http://atra/site/about"
+2021/06/18 11:41:45 [error] 971#971: *301 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+Error: Class 'yii\bootstrap\NavBar' not found in /home/zepedro/domains/atra/basic/views/layouts/main.php:31
+Stack trace:
+#0 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/View.php(348): require()
+#1 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#2 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/Controller.php(425): yii\base\View->renderFile()
+#3 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/Controller.php(411): yii\base\Controller->renderContent()
+#4 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/web/ErrorAction.php(139): yii\base\Controller->render()
+#5 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/web/ErrorAction.php(118): yii\web\ErrorAction->renderHtmlResponse()
+#6 [internal function]: yii\web\ErrorAction->run()
+#7 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array()
+#8 /home/zepedro/doma" while reading upstream, client: 127.0.0.1, server: atra, request: "GET /mybs/js/bootstrap.js HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.4-fpm.sock:", host: "atra", referrer: "http://atra/site/about"
+2021/06/18 11:41:45 [error] 971#971: *301 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+Error: Class 'yii\bootstrap\NavBar' not found in /home/zepedro/domains/atra/basic/views/layouts/main.php:31
+Stack trace:
+#0 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/View.php(348): require()
+#1 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#2 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/Controller.php(425): yii\base\View->renderFile()
+#3 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/Controller.php(411): yii\base\Controller->renderContent()
+#4 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/web/ErrorAction.php(139): yii\base\Controller->render()
+#5 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/web/ErrorAction.php(118): yii\web\ErrorAction->renderHtmlResponse()
+#6 [internal function]: yii\web\ErrorAction->run()
+#7 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array()
+#8 /home/zepedro/doma" while reading upstream, client: 127.0.0.1, server: atra, request: "GET /mybs/js/bootstrap.js HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.4-fpm.sock:", host: "atra", referrer: "http://atra/site/about"
+2021/06/18 11:41:58 [error] 971#971: *301 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+Error: Class 'yii\bootstrap\NavBar' not found in /home/zepedro/domains/atra/basic/views/layouts/main.php:31
+Stack trace:
+#0 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/View.php(348): require()
+#1 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#2 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/Controller.php(425): yii\base\View->renderFile()
+#3 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/Controller.php(411): yii\base\Controller->renderContent()
+#4 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/web/ErrorAction.php(139): yii\base\Controller->render()
+#5 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/web/ErrorAction.php(118): yii\web\ErrorAction->renderHtmlResponse()
+#6 [internal function]: yii\web\ErrorAction->run()
+#7 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array()
+#8 /home/zepedro/doma" while reading upstream, client: 127.0.0.1, server: atra, request: "GET /mybs/css/bootstrap.css HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.4-fpm.sock:", host: "atra", referrer: "http://atra/site/about"
+2021/06/18 11:41:58 [error] 971#971: *293 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+Error: Class 'yii\bootstrap\NavBar' not found in /home/zepedro/domains/atra/basic/views/layouts/main.php:31
+Stack trace:
+#0 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/View.php(348): require()
+#1 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#2 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/Controller.php(425): yii\base\View->renderFile()
+#3 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/Controller.php(411): yii\base\Controller->renderContent()
+#4 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/web/ErrorAction.php(139): yii\base\Controller->render()
+#5 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/web/ErrorAction.php(118): yii\web\ErrorAction->renderHtmlResponse()
+#6 [internal function]: yii\web\ErrorAction->run()
+#7 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array()
+#8 /home/zepedro/doma" while reading upstream, client: 127.0.0.1, server: atra, request: "GET /mybs/js/bootstrap.js HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.4-fpm.sock:", host: "atra", referrer: "http://atra/site/about"
+2021/06/18 11:41:58 [error] 971#971: *301 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+Error: Class 'yii\bootstrap\NavBar' not found in /home/zepedro/domains/atra/basic/views/layouts/main.php:31
+Stack trace:
+#0 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/View.php(348): require()
+#1 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#2 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/Controller.php(425): yii\base\View->renderFile()
+#3 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/Controller.php(411): yii\base\Controller->renderContent()
+#4 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/web/ErrorAction.php(139): yii\base\Controller->render()
+#5 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/web/ErrorAction.php(118): yii\web\ErrorAction->renderHtmlResponse()
+#6 [internal function]: yii\web\ErrorAction->run()
+#7 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array()
+#8 /home/zepedro/doma" while reading upstream, client: 127.0.0.1, server: atra, request: "GET /mybs/js/bootstrap.js HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.4-fpm.sock:", host: "atra", referrer: "http://atra/site/about"
+2021/06/18 11:42:19 [error] 971#971: *301 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+Error: Class 'yii\bootstrap\NavBar' not found in /home/zepedro/domains/atra/basic/views/layouts/main.php:31
+Stack trace:
+#0 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/View.php(348): require()
+#1 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#2 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/Controller.php(425): yii\base\View->renderFile()
+#3 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/Controller.php(411): yii\base\Controller->renderContent()
+#4 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/web/ErrorAction.php(139): yii\base\Controller->render()
+#5 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/web/ErrorAction.php(118): yii\web\ErrorAction->renderHtmlResponse()
+#6 [internal function]: yii\web\ErrorAction->run()
+#7 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array()
+#8 /home/zepedro/doma" while reading upstream, client: 127.0.0.1, server: atra, request: "GET /mybs/css/bootstrap.css HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.4-fpm.sock:", host: "atra", referrer: "http://atra/site/about"
+2021/06/18 11:42:19 [error] 971#971: *293 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+Error: Class 'yii\bootstrap\NavBar' not found in /home/zepedro/domains/atra/basic/views/layouts/main.php:31
+Stack trace:
+#0 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/View.php(348): require()
+#1 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#2 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/Controller.php(425): yii\base\View->renderFile()
+#3 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/Controller.php(411): yii\base\Controller->renderContent()
+#4 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/web/ErrorAction.php(139): yii\base\Controller->render()
+#5 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/web/ErrorAction.php(118): yii\web\ErrorAction->renderHtmlResponse()
+#6 [internal function]: yii\web\ErrorAction->run()
+#7 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array()
+#8 /home/zepedro/doma" while reading upstream, client: 127.0.0.1, server: atra, request: "GET /mybs/js/bootstrap.js HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.4-fpm.sock:", host: "atra", referrer: "http://atra/site/about"
+2021/06/18 11:42:19 [error] 971#971: *301 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+Error: Class 'yii\bootstrap\NavBar' not found in /home/zepedro/domains/atra/basic/views/layouts/main.php:31
+Stack trace:
+#0 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/View.php(348): require()
+#1 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#2 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/Controller.php(425): yii\base\View->renderFile()
+#3 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/Controller.php(411): yii\base\Controller->renderContent()
+#4 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/web/ErrorAction.php(139): yii\base\Controller->render()
+#5 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/web/ErrorAction.php(118): yii\web\ErrorAction->renderHtmlResponse()
+#6 [internal function]: yii\web\ErrorAction->run()
+#7 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array()
+#8 /home/zepedro/doma" while reading upstream, client: 127.0.0.1, server: atra, request: "GET /mybs/js/bootstrap.js HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.4-fpm.sock:", host: "atra", referrer: "http://atra/site/about"
+2021/06/18 11:42:20 [error] 971#971: *301 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+Error: Class 'yii\bootstrap\NavBar' not found in /home/zepedro/domains/atra/basic/views/layouts/main.php:31
+Stack trace:
+#0 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/View.php(348): require()
+#1 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#2 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/Controller.php(425): yii\base\View->renderFile()
+#3 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/Controller.php(411): yii\base\Controller->renderContent()
+#4 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/web/ErrorAction.php(139): yii\base\Controller->render()
+#5 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/web/ErrorAction.php(118): yii\web\ErrorAction->renderHtmlResponse()
+#6 [internal function]: yii\web\ErrorAction->run()
+#7 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array()
+#8 /home/zepedro/doma" while reading upstream, client: 127.0.0.1, server: atra, request: "GET /mybs/css/bootstrap.css HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.4-fpm.sock:", host: "atra", referrer: "http://atra/site/about"
+2021/06/18 11:42:20 [error] 971#971: *293 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+Error: Class 'yii\bootstrap\NavBar' not found in /home/zepedro/domains/atra/basic/views/layouts/main.php:31
+Stack trace:
+#0 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/View.php(348): require()
+#1 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#2 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/Controller.php(425): yii\base\View->renderFile()
+#3 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/Controller.php(411): yii\base\Controller->renderContent()
+#4 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/web/ErrorAction.php(139): yii\base\Controller->render()
+#5 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/web/ErrorAction.php(118): yii\web\ErrorAction->renderHtmlResponse()
+#6 [internal function]: yii\web\ErrorAction->run()
+#7 /home/zepedro/domains/atra/basic/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array()
+#8 /home/zepedro/doma" while reading upstream, client: 127.0.0.1, server: atra, request: "GET /mybs/js/bootstrap.js HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.4-fpm.sock:", host: "atra", referrer: "http://atra/site/about"
+2021/06/18 13:32:36 [error] 971#971: *461 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Cannot use yii\helpers\Html as Html because the name is already in use in /home/zepedro/domains/atra/basic/views/site/about.php on line 9" while reading response header from upstream, client: 127.0.0.1, server: atra, request: "GET /site/about HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.4-fpm.sock:", host: "atra"

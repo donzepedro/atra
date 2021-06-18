@@ -1,18 +1,19 @@
 <?php
-
-/* @var $this yii\web\View */
-
 use yii\helpers\Html;
+use yii\widgets\ActiveForm;
+use app\assets\AppAsset;
+
+AppAsset::register($this);
+/* @var $this yii\web\View */
 
 $this->title = 'About';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="site-about">
-    <h1><?= Html::encode($this->title) ?></h1>
-
-    <p>
-        This is the About page. You may modify the following file to customize its content:
-    </p>
-
-    <code><?= __FILE__ ?></code>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+         
+        </div>
+    </div>
+    
 </div>

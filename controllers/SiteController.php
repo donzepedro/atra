@@ -123,6 +123,8 @@ class SiteController extends Controller
      */
     public function actionAbout()
     {
-        return $this->render('about');
+        $this->layout = 'test';
+        $model = new LoginForm();
+        return $this->render('about',compact('model'));
     }
 }
