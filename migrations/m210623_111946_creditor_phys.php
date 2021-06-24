@@ -14,7 +14,7 @@ class m210623_111946_creditor_phys extends Migration
     {
             $this->execute("CREATE TABLE creditor_phys
                         (
-                         id          int NOT NULL ,
+                         id          int NOT NULL AUTO_INCREMENT,
                          lname       varchar(20) NOT NULL ,
                          fname       varchar(20) NOT NULL ,
                          mname       varchar(20) NULL ,

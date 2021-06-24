@@ -5,7 +5,7 @@ use yii\db\Migration;
 /**
  * Class m210623_084200_education
  */
-class m210623_084200_education extends Migration
+class m210624_115505_education extends Migration
 {
     /**
      * {@inheritdoc}
@@ -14,7 +14,7 @@ class m210623_084200_education extends Migration
     {
             $this->execute("CREATE TABLE education
                     (
-                     id          int NOT NULL ,
+                     id          int NOT NULL AUTO_INCREMENT,
                      id_am       int NOT NULL ,
                      speciality  varchar(100) NOT NULL ,
                      level       varchar(30) NOT NULL ,
@@ -47,7 +47,7 @@ class m210623_084200_education extends Migration
 
     public function down()
     {
-        echo "m210623_084200_education cannot be reverted.\n";
+        echo "m210624_115505_education cannot be reverted.\n";
 
         return false;
     }

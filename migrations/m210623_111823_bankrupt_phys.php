@@ -13,17 +13,17 @@ class m210623_111823_bankrupt_phys extends Migration
     public function safeUp()
     {
             $this->execute("CREATE TABLE bankrupt_phys
-                    (
-                     id          int NOT NULL ,
-                     lname       varchar(20) NOT NULL ,
-                     fname       varchar(20) NOT NULL ,
-                     mname       varchar(20) NULL ,
-                     debt_amount int(12) NOT NULL ,
-                     inn         int NOT NULL ,
-                     region      varchar(20) NOT NULL ,
+                        (
+                         id          int NOT NULL AUTO_INCREMENT ,
+                         lname       varchar(20) NOT NULL ,
+                         fname       varchar(20) NOT NULL ,
+                         mname       varchar(20) NULL ,
+                         debt_amount int(12) NOT NULL ,
+                         inn         int NOT NULL ,
+                         region      varchar(20) NOT NULL ,
 
-                    PRIMARY KEY (id)
-                    );
+                        PRIMARY KEY (id)
+                        );
                     ");
     }
 

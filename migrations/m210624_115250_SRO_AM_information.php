@@ -5,7 +5,7 @@ use yii\db\Migration;
 /**
  * Class m210623_075446_SRO_AM_information
  */
-class m210623_075446_SRO_AM_information extends Migration
+class m210624_115250_SRO_AM_information extends Migration
 {
     /**
      * {@inheritdoc}
@@ -14,7 +14,7 @@ class m210623_075446_SRO_AM_information extends Migration
     {
             $this->execute("CREATE TABLE SRO_AM_information
                         (
-                         id                    int NOT NULL ,
+                         id                    int NOT NULL AUTO_INCREMENT,
                          id_am                 int NOT NULL ,
                          SRO_name              varchar(100) NOT NULL ,
                          membership_start_date date NOT NULL ,
@@ -46,7 +46,7 @@ class m210623_075446_SRO_AM_information extends Migration
 
     public function down()
     {
-        echo "m210623_075446_SRO_AM_information cannot be reverted.\n";
+        echo "m210624_115250_SRO_AM_information cannot be reverted.\n";
 
         return false;
     }

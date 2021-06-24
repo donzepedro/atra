@@ -5,7 +5,7 @@ use yii\db\Migration;
 /**
  * Class m210623_074851_arbitration_managers
  */
-class m210623_074851_arbitration_managers extends Migration {
+class m210624_115103_arbitration_managers extends Migration {
 
     /**
      * {@inheritdoc}
@@ -13,13 +13,13 @@ class m210623_074851_arbitration_managers extends Migration {
     public function safeUp() {
         $this->execute("CREATE TABLE arbitration_manager
                             (
-                             id                       int NOT NULL ,
+                             id                       int NOT NULL  AUTO_INCREMENT,
                              lname                    varchar(20) NOT NULL ,
                              fname                    varchar(20) NOT NULL ,
                              mname                    varchar(20) NULL DEFAULT NULL ,
                              birth_date               date NULL DEFAULT NULL ,
                              post_addr                varchar(255) NULL DEFAULT NULL ,
-                             inn                      int(12) NULL DEFAULT NULL ,
+                             inn                      int(12) NULL DEFAULT NULL,
                              phone_number             int NULL DEFAULT NULL ,
                              job_region               varchar(50) NULL DEFAULT NULL ,
                              government_secret_access tinyint(1) NULL DEFAULT NULL ,
@@ -54,7 +54,7 @@ class m210623_074851_arbitration_managers extends Migration {
 
       public function down()
       {
-      echo "m210623_074851_arbitration_managers cannot be reverted.\n";
+      echo "m210624_115103_arbitration_managers cannot be reverted.\n";
 
       return false;
       }
