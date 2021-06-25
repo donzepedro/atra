@@ -1,28 +1,28 @@
 <?php
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
 namespace app\assets;
 
 use yii\web\AssetBundle;
+
 /**
- * Description of NewAsset
+ * Main application asset bundle.
  *
- * @author zepedro
+ * @author Qiang Xue <qiang.xue@gmail.com>
+ * @since 2.0
  */
-class NewAsset extends AssetBundle{
-    public $sourcePath = '@app/web/css';
- 
+class NewAsset extends AssetBundle
+{
+    public $basePath = '@webroot';
+    public $baseUrl = '@web';
     public $css = [
-        'css/CommonStyles',
+        'css/crmlayout.css',
     ];
     public $js = [
-        'js/bootstrap.js',
+       
     ];
-    
-    public $depends = [];
+    public $depends = [
+        'yii\web\YiiAsset',
+        'yii\bootstrap4\BootstrapAsset',
+    ];
 }

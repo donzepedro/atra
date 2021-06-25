@@ -8,17 +8,21 @@
 
 namespace app\controllers;
 use yii\web\Controller;
+use app\models\ArbitrationManager;
 
 /**
- * Description of ArbitrationManagerController
+ * Description of ArbitrManagerController
  *
  * @author zepedro
  */
-class ArbitrationManagerController extends Controller {
+class ArbitrManagerController extends Controller {
     
+    public $layout = 'crmlayout.php';
     
     public function actionIndex(){
-        $arbitration_inf
+       
+        $arbitr_managers = ArbitrationManager::find()->all();
+        return $this->render('index',['data'=>$arbitr_managers]);
     }
     //put your code here
 }
