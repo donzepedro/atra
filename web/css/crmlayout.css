@@ -2,3 +2,7 @@
 .my-nav{
     background: black;
 }
+.my-table-date td{
+    padding: 10px;
+    border: 1px solid #808080;
+}

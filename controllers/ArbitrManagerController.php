@@ -20,7 +20,7 @@ class ArbitrManagerController extends Controller {
     public $layout = 'crmlayout.php';
     
     public function actionIndex(){
-       
+        
         $arbitr_managers = ArbitrationManager::find()->all();
         return $this->render('index',['data'=>$arbitr_managers]);
     }
