@@ -31,6 +31,7 @@ class m210624_115103_arbitration_managers extends Migration {
                              procedure_time_average   float NOT NULL COMMENT 'procedure_time_average months' ,
                              start_date               date NOT NULL ,
                              end_date                 date NULL ,
+                             path_to_img              varchar(30) NULL ,
 
                             PRIMARY KEY (id)
                             ) ENGINE=INNODB COLLATE=utf8mb4_0900_ai_ci;

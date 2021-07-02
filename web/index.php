@@ -3,6 +3,7 @@
 // comment out the following two lines when deployed to production
 defined('YII_DEBUG') or define('YII_DEBUG', true);
 defined('YII_ENV') or define('YII_ENV', 'dev');
+define('ROOT', str_replace('web', '', __DIR__));
 
 require 'functions.php';
 

@@ -45,6 +45,7 @@ class DbGenController extends Controller {
             "procedure_time_average" => "12",
             "start_date" => "20.20.2001",
             "end_date" => "20.20.2021",
+            "path_to_img" => '/img/Profilepic.jpg'
         );
         for ($i = 1; $i < 10; $i++){
         
@@ -66,6 +67,7 @@ class DbGenController extends Controller {
             $arb_manager->procedure_time_average = "12";
             $arb_manager->start_date = "2001-10-10";
             $arb_manager->end_date = "2021-10-10";
+            $arb_manager->path_to_img = "/img/Profilepic.jpg";
 //            $arb_manager->atributes = $data_arr;
             
             $arb_manager->save();

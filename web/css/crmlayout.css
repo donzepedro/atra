@@ -6,3 +6,9 @@
     padding: 10px;
     border: 1px solid #808080;
 }
+.table td div:hover{
+    cursor: pointer;
+}
+.table td a{
+    text-decoration: none;
+}

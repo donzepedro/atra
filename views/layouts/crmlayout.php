@@ -33,7 +33,7 @@ NewAsset::register($this);
               </button>
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                  <a class="nav-link active" aria-current="page" href="http://atra/arbitr-manager">Arbitration managers</a>
+                  <a class="nav-link active" aria-current="page" href="http://bankrupt/arbitr-manager">Arbitration managers</a>
                   <a class="nav-link active" href="http://atra/arbitr-manager">Bankrupt</a>
                   <a class="nav-link active" href="#">Disabled</a>
                  

@@ -18,11 +18,26 @@ use app\models\ArbitrationManager;
 class ArbitrManagerController extends Controller {
     
     public $layout = 'crmlayout.php';
+  
     
     public function actionIndex(){
         
         $arbitr_managers = ArbitrationManager::find()->all();
         return $this->render('index',['data'=>$arbitr_managers]);
+    }
+    
+    public function actionEditManager(){
+        
+        if(!empty(\Yii::$app->request->get('id'))){
+            
+            $arbitr_managers = ArbitrationManager::find()->where(['id'=>\Yii::$app->request->get('id')])->all();
+            return $this->render('edit_manager',['data'=>$arbitr_managers]);
+        }
+      
+        return $this->render('edit_manager',['error'=>'ERROR MESSAGE']);
+//        return $this->redirect(['index']);
+           
+        
     }
     //put your code here
 }
