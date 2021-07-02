@@ -6,9 +6,25 @@
     padding: 10px;
     border: 1px solid #808080;
 }
-.table td div:hover{
-    cursor: pointer;
+.table{
+    border-left: 1px solid black;
 }
+.table th{
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+/*.table td div:hover{
+    cursor: pointer;
+}*/
 .table td a{
     text-decoration: none;
+    color: white;
+}
+.pgbuttons{
+    background: rgba(123, 159, 232, 0.5);
+    border-radius: 5px;
+}
+.pgbuttons:hover{
+    cursor:pointer;
+    border: 1px solid black;
 }
