@@ -35,8 +35,16 @@ class ArbitrManagerController extends Controller {
         }
       
         return $this->render('edit_manager',['error'=>'ERROR MESSAGE']);
-//        return $this->redirect(['index']);
-           
+    }
+    
+    public function actionDeleteManager(){
+        $arbitr_managers = ArbitrationManager::findOne(\Yii::$app->request->get('id'));
+        try{
+            $arbitr_managers->delete();
+        } catch (ErrorException $e){
+            \Yii::warning('some problem durinng deleting');
+        }
+       $this->redirect('/arbitr-manager/index?pg=5&del=yes');
         
     }
     //put your code here

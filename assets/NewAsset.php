@@ -19,6 +19,7 @@ class NewAsset extends AssetBundle
         'css/crmlayout.css',
     ];
     public $js = [
+         'js/manager_delete.js',
        
     ];
     public $depends = [

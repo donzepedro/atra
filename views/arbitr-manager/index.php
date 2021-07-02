@@ -15,28 +15,32 @@ use yii\helpers\Url;
         $disprows = $start_rows_for_one_page;
         $rows = 0;
         $pages_amount = intdiv(count($data),$start_rows_for_one_page); // this is for list "show by" for 5,10,15,20 etc.
+        $curpage = 1;
+        $prevpage = $curpage - 1; 
+        $nextpage = $curpage + 1;
+        $start_elems_amount = count($data);
+        $data = array_slice($data,$pg*( $curpage-1));
         if(!empty(\Yii::$app->request->get('page'))){
             $curpage = \Yii::$app->request->get('page');
-            $prevpage = $curpage - 1; 
-            $nextpage = $curpage + 1;
-            $start_elems_amount = count($data);
-            $data = array_slice($data,$pg*( $curpage-1));
         }
         
     }
 ?>
 <table class="table my-4">
      <thead>
-        <tr>
-                <th scope="col">Avatar</th>
-                <th scope="col">Last Name</th>
-                <th scope="col">First Name</th>
-                <th scope="col">Middle Name</th>
-                <th scope="col">Job Region</th>
-                <th scope="col">Phone</th>
-                <th scope="col">End date</th>
-                <th scope="col" colspan="2"> show by
-                    <select class="custom-select " onchange="window.location.href = this.options[this.selectedIndex].value">
+         <tr class="text-center">
+                <th >Avatar</th>
+                <th >Last Name</th>
+                <th >First Name</th>
+                <th >Middle Name</th>
+                <th >Job Region</th>
+                <th >Phone</th>
+                <th >End date</th>
+                <th  colspan="2"> 
+                    <div class="row">
+                        <div class="col my-auto">show by</div>
+                        <div class="col ">
+                        <select class="custom-select " onchange="window.location.href = this.options[this.selectedIndex].value">
                             <option selected><?= $pg ?></option>
                             <?php for($i=0; $i <= $pages_amount; $i++ ):?>
                             
@@ -44,7 +48,9 @@ use yii\helpers\Url;
                                 <?php $disprows+=$start_rows_for_one_page;?>
                             <?php endfor;?>
                            
-                    </select>
+                        </select>
+                        </div>
+                    </div>    
                 </th>
                 
         </tr>
@@ -67,7 +73,10 @@ use yii\helpers\Url;
         <td><?= $eachmanager->id ?></td>
         <!--<td class="badge badge-info my-2 ml-1"><a href=<?='/arbitr-manager/edit-manager?id=' . $eachmanager->id?>>view</a></td>-->
         <td class="badge badge-secondary my-2 ml-1"><a  href=<?='/arbitr-manager/edit-manager?id=' . $eachmanager->id?>>edit</a></td>
-        <td class="badge badge-danger my-2 ml-1 "><a  href=<?='/arbitr-manager/edit-manager?id=' . $eachmanager->id?>>delete</a></td>
+        <td class="badge badge-danger my-2 ml-1 "><a id='delete_manager' href="<?='/arbitr-manager/delete-manager?id=' . $eachmanager->id?>" onclick="delete_manager()">delete</a></td> 
+        
+        
+        
     </tr>
     <?php endforeach;?>
 </table>

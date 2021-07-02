@@ -19,7 +19,7 @@ class AppAsset extends AssetBundle
         'css/crmlayout.css',
     ];
     public $js = [
-       
+      
     ];
     public $depends = [
         'yii\web\YiiAsset',
