@@ -54,6 +54,8 @@ class ArbitrationManager extends \yii\db\ActiveRecord
             [['post_addr'], 'string', 'max' => 255],
             [['job_region'], 'string', 'max' => 50],
             [['SRO_AM_name'], 'string', 'max' => 100],
+            [['start_date'],'myFunc','skipOnEmpty'=> false],
+           
         ];
     }
 
@@ -113,4 +115,12 @@ class ArbitrationManager extends \yii\db\ActiveRecord
     {
         return $this->hasMany(ForeignLanguage::className(), ['id_am' => 'id']);
     }
+    
+    public function myFunc($attribute,$params){
+        if(!(count($attribute) > 2)){
+            $this->addError($attribute,'test');
+        }
+        
+    }
+    
 }

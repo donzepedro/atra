@@ -9,6 +9,8 @@
 namespace app\controllers;
 use yii\web\Controller;
 use app\models\ArbitrationManager;
+use app\models\ForeignLanguage;
+use app\models\Education;
 
 /**
  * Description of ArbitrManagerController
@@ -29,9 +31,19 @@ class ArbitrManagerController extends Controller {
     public function actionEditManager(){
         
         if(!empty(\Yii::$app->request->get('id'))){
+//            if(!empty(\Yii::$app->request->post())){
+//                echo "<pre>";
+//                var_dump(\Yii::$app->request->post());
+//                echo "</pre>";
+//            }
             
-            $arbitr_managers = ArbitrationManager::find()->where(['id'=>\Yii::$app->request->get('id')])->all();
-            return $this->render('edit_manager',['data'=>$arbitr_managers]);
+            $model = new ArbitrationManager();
+            $arbitr_managers = ArbitrationManager::find()->where(['id'=>\Yii::$app->request->get('id')])->one();
+            $education = Education::find()->where(['id_am'=>\Yii::$app->request->get('id')])->one();
+            $foreign_language = ForeignLanguage::find()->where(['id_am'=>\Yii::$app->request->get('id')])->one();
+            return $this->render('edit_manager',['model'=>$model,'foreign_language'=>$foreign_language,'education'=>$education, 'arbitr_managers'=>$arbitr_managers]);
+        
+            
         }
       
         return $this->render('edit_manager',['error'=>'ERROR MESSAGE']);
