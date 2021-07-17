@@ -15,7 +15,11 @@ use yii\helpers\Url;
         $disprows = $start_rows_for_one_page;
         $rows = 0;
         $pages_amount = intdiv(count($data),$start_rows_for_one_page); // this is for list "show by" for 5,10,15,20 etc.
-        $curpage = 1;
+        if(!empty(\Yii::$app->request->get('page'))){
+            $curpage = \Yii::$app->request->get('page');
+        }else{
+            $curpage = 1;
+        }
         $prevpage = $curpage - 1; 
         $nextpage = $curpage + 1;
         $start_elems_amount = count($data);
@@ -88,13 +92,13 @@ use yii\helpers\Url;
 </table>
 <div class="row  my-2 px-0 text-center w-50">
     <?php if(!($curpage == 1)): ?>
-        <div class="col-1 mx-1 py-2 w-100"><a class="badge badge-light" style="cursor:pointer" href=<?= '/arbitr-manager/?pg='.$pg.'&page='.  $prevpage ?>><?=  '<'?></a></div>
+        <div class="col-1 mx-1 py-2 w-100"><a class="badge badge-light" style="cursor:pointer" href=<?= '/arbitr-manager/?pg='.$pg.'&page='.  $prevpage ?>> < </a></div>
     <?php endif; ?>
     <?php for($i=1; $i <= intdiv($start_elems_amount,$pg)+1; $i++ ):?>
         <div class="col-1 mx-1 py-2 "><a class="badge badge-light" style="cursor:pointer" href=<?= '/arbitr-manager/?pg='.$pg.'&page='.$i?>><?=  $i?></a></div>
     <?php endfor;?>
     <?php if(!(($curpage)==$i-1)):?>
-        <div class="col-1 mx-1 py-2 mr-auto"><a class="badge badge-light" style="cursor:pointer" href=<?= '/arbitr-manager/?pg='.$pg.'&page='. $nextpage?>><?=  '>'?></a></div>
+        <div class="col-1 mx-1 py-2 mr-auto"><a class="badge badge-light" style="cursor:pointer" href=<?= '/arbitr-manager/?pg='.$pg.'&page='. $nextpage?>> > </a></div>
     <?php endif;?>
 </div>
 
