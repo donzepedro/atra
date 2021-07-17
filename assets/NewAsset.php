@@ -21,6 +21,7 @@ class NewAsset extends AssetBundle
     public $js = [
          'js/manager_delete.js',
          'js/validator.js',
+         'js/loadphoto.js',
        
     ];
     public $depends = [

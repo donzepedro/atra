@@ -11,18 +11,17 @@ use yii\bootstrap4\ActiveForm;
 //    
 //}
     ?>
-
+<?php $form = ActiveForm::begin(['options' => ['enctype' => 'multipart/form-data']]);?>
 <div class="row mt-5">
     <div class="col-3 mt-5 text-center">
-        <img class="img-fluid" style="max-height: 300px" src= <?= $arbitr_managers->path_to_img ?>>
+        <img class="img-fluid" id="image_upload_preview" style="max-height: 300px" src= '/img/Profilepic.jpg'>
         <div class="row mt-5">
-            <div class="col"><?= Html::submitButton('Load Image', ['class' => 'btn btn-primary', 'name' => 'LoadImg-button']) ?></div>
-            <div class="col"><?= Html::submitButton('Save Changes', ['class' => 'btn btn-success', 'name' => 'SaveChange-button']) ?></div>
-            <div class="col"><?= Html::submitButton('Discard Changes', ['class' => 'btn btn-danger', 'name' => 'SaveChange-button']) ?></div>
+            <div class='col'><?= $form->field($arbitr_managers, 'imageFile')->fileInput(['id'=>'inputFile'])->label('') ?></div>
+           <div class="col-12"><?= Html::submitButton('Create Manager', ['class' => 'btn btn-success', 'name' => 'Create-button']) ?></div>
         </div>
     </div>
         <div class="col-3">
-        <?php $form = ActiveForm::begin();?>
+  
                     <?php // $form->field($arbitr_managers, 'id')->textInput([]) ?>
                     <?= $form->field($arbitr_managers, 'lname')->textInput([]) ?>
                     <?= $form->field($arbitr_managers, 'fname')->textInput([]) ?>
@@ -56,8 +55,8 @@ use yii\bootstrap4\ActiveForm;
                         <?= $form->field($education, 'speciality')->textInput([]) ?>
                         <?= $form->field($education, 'level')->textInput([]) ?>
                         <?= $form->field($education, 'institution')->textInput([]) ?>
-                        <?= $form->field($education, 'start_date')->textInput([]) ?>
-                        <?= $form->field($education, 'end_date')->textInput([]) ?>
+                        <?= $form->field($education, 'start_date')->textInput(['type'=>'date']) ?>
+                        <?= $form->field($education, 'end_date')->textInput(['type'=>'date']) ?>
                     <?= $form->field($foreign_language, 'language')->textInput([]) ?>
                     <?= $form->field($foreign_language, 'level')->textInput([]) ?>
                 <?php // ActiveForm::end(); ?>

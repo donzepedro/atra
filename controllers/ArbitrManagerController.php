@@ -59,5 +59,29 @@ class ArbitrManagerController extends Controller {
        $this->redirect('/arbitr-manager/index?pg=5&del=yes');
         
     }
+    
+    public function actionCreateManager(){
+        $arbitr_managers = new ArbitrationManager();
+        $education = new Education();
+        $foreign_language = new ForeignLanguage();
+        
+        if(\Yii::$app->request->isPost){
+            
+            $arbitr_managers->imageFile = \yii\web\UploadedFile::getInstance($arbitr_managers, 'imageFile'); // for img save
+            //if some problem during saving img then debug error. 
+            if (!($arbitr_managers->upload())) {
+                // file is uploaded successfully
+                echo 'error upload';
+                die;
+            }
+            //service temporary output
+            echo "<pre>";
+            var_dump(\Yii::$app->request->post());
+            echo "</pre>";
+            
+            
+        }
+        return $this->render('create_manager',['foreign_language'=>$foreign_language,'education'=>$education, 'arbitr_managers'=>$arbitr_managers]);
+    }
     //put your code here
 }

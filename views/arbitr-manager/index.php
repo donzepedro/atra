@@ -26,6 +26,12 @@ use yii\helpers\Url;
         
     }
 ?>
+
+
+<div class="row">
+    <div class="btn btn-primary mt-3"><a href='/arbitr-manager/create-manager'>Create new Arbitration manager</a></div>
+</div>
+
 <table class="table my-4">
      <thead>
          <tr class="text-center">
