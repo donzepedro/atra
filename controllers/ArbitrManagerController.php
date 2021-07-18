@@ -22,6 +22,7 @@ use app\models\UploadFormForEdit;
 class ArbitrManagerController extends Controller {
     
     public $layout = 'crmlayout.php';
+    public $base_url_for_controller = 'bankrupt-legal';
 
   
     

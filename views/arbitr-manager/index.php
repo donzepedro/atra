@@ -36,7 +36,7 @@ use yii\helpers\Url;
     <div class="btn btn-primary mt-3"><a href='/arbitr-manager/create-manager'>Create new Arbitration manager</a></div>
 </div>
 
-<table class="table my-4">
+<table class="table my-4 ">
      <thead>
          <tr class="text-center">
                 <th >Avatar</th>
@@ -72,18 +72,18 @@ use yii\helpers\Url;
        $rows++;
        ?>
      <input type="hidden" id="managerid" value=>
-     <tr>
+     <tr class="text-center">
          <td><img class="img-fluid" style="max-height: 100px" src= <?= str_replace('../web', '',$eachmanager->path_to_img)?>></td>
-        <td><?= $eachmanager->lname ?></td>
+         <td><?= $eachmanager->lname ?></td>
         <td><?= $eachmanager->fname ?></td>
         <td><?= $eachmanager->mname ?></td>
         <td><?= $eachmanager->job_region ?></td>
         <td><?= $eachmanager->phone_number ?></td>
         <td><?= $eachmanager->end_date ?></td>
-        <td><?= $eachmanager->id ?></td>
+        <!--<td><?php // $eachmanager->id ?></td>-->
         <!--<td class="badge badge-info my-2 ml-1"><a href=<?='/arbitr-manager/edit-manager?id=' . $eachmanager->id?>>view</a></td>-->
-        <td class="badge badge-secondary my-2 ml-1"><a  href=<?='/arbitr-manager/edit-manager?id=' . $eachmanager->id?>>edit</a></td>
-        <td class="badge badge-danger my-2 ml-1 "><a id='delete_manager' href="<?='/arbitr-manager/delete-manager?pg='. $pg . '&page='. $curpage .'&id=' . $eachmanager->id?>" onclick="delete_manager()">delete</a></td> 
+        <td class="badge badge-secondary my-5 ml-1"><a  href=<?='/arbitr-manager/edit-manager?id=' . $eachmanager->id?>>edit</a></td>
+        <td class="badge badge-danger my-5 ml-1 "><a id='delete_manager' href="<?='/arbitr-manager/delete-manager?pg='. $pg . '&page='. $curpage .'&id=' . $eachmanager->id?>" onclick="delete_manager()">delete</a></td> 
         
         
         
