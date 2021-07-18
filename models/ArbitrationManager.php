@@ -35,7 +35,6 @@ class ArbitrationManager extends \yii\db\ActiveRecord
     /**
      * {@inheritdoc}
      */
-     public $imageFile;
      
     public static function tableName()
     {
@@ -52,11 +51,11 @@ class ArbitrationManager extends \yii\db\ActiveRecord
             [['birth_date', 'start_date', 'end_date'], 'safe'],
             [['inn', 'phone_number', 'government_secret_access', 'legal_phys', 'categories', 'count_of_procedure_phys', 'count_of_procedure_legal'], 'integer'],
             [['procedure_time_average'], 'number'],
+            [['inn'],'string','max'=>12],
             [['lname', 'fname', 'mname'], 'string', 'max' => 20],
             [['post_addr'], 'string', 'max' => 255],
             [['job_region'], 'string', 'max' => 50],
             [['SRO_AM_name'], 'string', 'max' => 100],
-            [['imageFile'], 'file', 'skipOnEmpty' => false, 'extensions' => 'png, jpg','maxSize'=>500],
             
            
         ];
@@ -118,14 +117,13 @@ class ArbitrationManager extends \yii\db\ActiveRecord
     {
         return $this->hasMany(ForeignLanguage::className(), ['id_am' => 'id']);
     }
-    public function upload()
+    
+    public function innlength($attribute)
     {
-        if ($this->imageFile->saveAs('../web/img/' . $this->imageFile->baseName . '.' . $this->imageFile->extension)) {
-            return true;
-        } else {
-            return false;
+        if(strlen($this->attribute) > 11 ){
+
+            $this->addError($attribute,'inn must be short then 11 symbols');
         }
     }
-    
     
 }   

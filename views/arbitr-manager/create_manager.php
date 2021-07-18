@@ -14,9 +14,9 @@ use yii\bootstrap4\ActiveForm;
 <?php $form = ActiveForm::begin(['options' => ['enctype' => 'multipart/form-data']]);?>
 <div class="row mt-5">
     <div class="col-3 mt-5 text-center">
-        <img class="img-fluid" id="image_upload_preview" style="max-height: 300px" src= '/img/Profilepic.jpg'>
+        <img class="img-fluid" id="image_upload_preview" style="max-height: 300px" src= '/img/F_M_profilepic.jpg'>
+        <div class='col '><?= $form->field($imgupload, 'imageFile')->fileInput(['id'=>'inputFile', 'class'=>'imgloadbtn'])->label('') ?></div>
         <div class="row mt-5">
-            <div class='col'><?= $form->field($arbitr_managers, 'imageFile')->fileInput(['id'=>'inputFile'])->label('') ?></div>
            <div class="col-12"><?= Html::submitButton('Create Manager', ['class' => 'btn btn-success', 'name' => 'Create-button']) ?></div>
         </div>
     </div>

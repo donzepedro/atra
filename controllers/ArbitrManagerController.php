@@ -11,6 +11,7 @@ use yii\web\Controller;
 use app\models\ArbitrationManager;
 use app\models\ForeignLanguage;
 use app\models\Education;
+use app\models\UploadForm;
 
 /**
  * Description of ArbitrManagerController
@@ -20,6 +21,7 @@ use app\models\Education;
 class ArbitrManagerController extends Controller {
     
     public $layout = 'crmlayout.php';
+
   
     
     public function actionIndex(){
@@ -56,32 +58,80 @@ class ArbitrManagerController extends Controller {
         } catch (ErrorException $e){
             \Yii::warning('some problem durinng deleting');
         }
-       $this->redirect('/arbitr-manager/index?pg=5&del=yes');
+        if(!empty(\Yii::$app->request->get('page'))){
+            $page = '&page=' . \Yii::$app->request->get('page');
+        }else{
+            $page='';
+        }
+//       echo HOME . 'pg=' . \Yii::$app->request->get('pg') . $page;
+//       die;
+       $this->redirect(HOME . 'pg='. \Yii::$app->request->get('pg') . $page);
         
     }
     
     public function actionCreateManager(){
+        
         $arbitr_managers = new ArbitrationManager();
         $education = new Education();
         $foreign_language = new ForeignLanguage();
+        $imgupload = new UploadForm();
         
         if(\Yii::$app->request->isPost){
             
-            $arbitr_managers->imageFile = \yii\web\UploadedFile::getInstance($arbitr_managers, 'imageFile'); // for img save
+            $arbitr_managers->attributes = \Yii::$app->request->post('ArbitrationManager');
+           
+            if(!$arbitr_managers->save()){
+                throw new \yii\web\HttpException(500,'server error, data for Arbitr managers not saved');
+            } 
+            
+            $education->attributes = \Yii::$app->request->post('Education');
+            $education->id_am = $arbitr_managers->id;
+            
+            if(!$education->save()){
+                throw new \yii\web\HttpException(500,'server error, data for Arbitr Education not saved');
+            } 
+            
+            $foreign_language->attributes = \Yii::$app->request->post('ForeignLanguage');
+            $foreign_language->id_am =$arbitr_managers->id;
+            
+            if(!$foreign_language->save()){
+                throw new \yii\web\HttpException(500,'server error, data for Arbitr Foreign lang not saved');
+            } 
+            
+            $path = MANAGERS_IMG_FOLDER . $arbitr_managers->id . '/';
+            
+           
+            
+            if(!file_exists($path)){
+               mkdir($path);
+            }
+            $imgupload->imageFile = \yii\web\UploadedFile::getInstance($imgupload, 'imageFile'); // for img save
             //if some problem during saving img then debug error. 
-            if (!($arbitr_managers->upload())) {
+            if (!($imgupload->upload($path))) {
                 // file is uploaded successfully
                 echo 'error upload';
                 die;
+            }else{
+                $arbitr_managers->path_to_img = $path . $imgupload->imageFile->name;
+                
+                if(!$arbitr_managers->save()){
+                    throw new \yii\web\HttpException(500,'server error, data for Arbitr managers not saved');
+                } 
             }
-            //service temporary output
-            echo "<pre>";
-            var_dump(\Yii::$app->request->post());
-            echo "</pre>";
             
+            return $this->redirect(HOME);
+            //service temporary output
+//            echo "<pre>";
+//            var_dump($education->attributes);
+////            var_dump(\Yii::$app->request->post());
+//            echo "</pre>";
+//            echo "<pre>";
+//            var_dump($foreign_language->attributes);
+////            var_dump(\Yii::$app->request->post());
+//            echo "</pre>";
             
         }
-        return $this->render('create_manager',['foreign_language'=>$foreign_language,'education'=>$education, 'arbitr_managers'=>$arbitr_managers]);
+        return $this->render('create_manager',['imgupload'=>$imgupload,'foreign_language'=>$foreign_language,'education'=>$education, 'arbitr_managers'=>$arbitr_managers]);
     }
     //put your code here
 }

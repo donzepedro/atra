@@ -17,6 +17,7 @@ class NewAsset extends AssetBundle
     public $baseUrl = '@web';
     public $css = [
         'css/crmlayout.css',
+        'css/imgloadbtn.css',
     ];
     public $js = [
          'js/manager_delete.js',
