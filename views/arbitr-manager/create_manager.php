@@ -50,7 +50,7 @@ use yii\bootstrap4\ActiveForm;
         </div><!-- comment -->
         <div class="col-3">
                 <?php // $form = ActiveForm::begin();?>
-                    <?= $form->field($arbitr_managers, 'path_to_img')->textInput([]) ?>
+                    <?php // $form->field($arbitr_managers, 'path_to_img')->textInput([]) ?>
             
                         <?= $form->field($education, 'speciality')->textInput([]) ?>
                         <?= $form->field($education, 'level')->textInput([]) ?>
