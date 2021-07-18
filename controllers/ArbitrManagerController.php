@@ -53,11 +53,19 @@ class ArbitrManagerController extends Controller {
     
     public function actionDeleteManager(){
         $arbitr_managers = ArbitrationManager::findOne(\Yii::$app->request->get('id'));
+        
+        if((file_exists('../web/img/managers_profile_img/' . \Yii::$app->request->get('id')))&&(is_dir('../web/img/managers_profile_img/' . \Yii::$app->request->get('id')))){
+            unlink($arbitr_managers->path_to_img);
+            rmdir('../web/img/managers_profile_img/' . \Yii::$app->request->get('id'));
+            }
+        
         try{
             $arbitr_managers->delete();
+            
         } catch (ErrorException $e){
             \Yii::warning('some problem durinng deleting');
         }
+        
         if(!empty(\Yii::$app->request->get('page'))){
             $page = '&page=' . \Yii::$app->request->get('page');
         }else{
@@ -70,7 +78,6 @@ class ArbitrManagerController extends Controller {
     }
     
     public function actionCreateManager(){
-        
         $arbitr_managers = new ArbitrationManager();
         $education = new Education();
         $foreign_language = new ForeignLanguage();
